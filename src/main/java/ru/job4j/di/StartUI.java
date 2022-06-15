@@ -5,15 +5,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class StartUI {
     private final Store store;
-   private final ConsoleInput consoleInput;
+    private final ConsoleInput consoleInput;
 
     public StartUI(Store store, ConsoleInput consoleInput) {
         this.store = store;
         this.consoleInput = consoleInput;
     }
 
-  public String input() {
-      return consoleInput.askStr("Input: ");
+    public String input() {
+        return consoleInput.askStr("Input: ");
     }
 
     public void add() {
