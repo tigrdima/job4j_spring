@@ -1,9 +1,7 @@
 package ru.job4j.di;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.stereotype.Component;
 
-@Component
 public class SpringDI {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
@@ -11,7 +9,6 @@ public class SpringDI {
         context.refresh();
 
         StartUI ui = context.getBean(StartUI.class);
-        ui.add();
         ui.add();
         ui.print();
     }
